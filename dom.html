@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-Hello
+    Hello
+    <script>
+        function mul() {
+
+            let num1 = +document.getElementsByTagName("input")[0].value
+            let num2 = +document.getElementsByTagName("input")[1].value
+            document.getElementsByTagName("li")[0].innerHTML = num1 * num2
+        }
+
+        function plus() {
+            let num1 = +document.getElementsByTagName("input")[0].value
+            let num2 = +document.getElementsByTagName("input")[1].value
+            document.getElementsByTagName("li")[1].innerHTML = num1 + num2
+        }
+
+        
+
+    </script>
+    <input type="text">
+    <input type="text">
+    <button onclick="mul()">multiple</button>
+    <button onclick="plus()">plus</button>
+    <ul> multiple result
+        <li></li>
+    </ul>
+    <ul> plus result
+        <li></li>
+    </ul>
+    okpixpd
+
 </body>
+
 </html>
