@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .background{
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            z-index: -1;
+            background: var(--color-darkblue);
+            background-image: linear-gradient(115deg,
+                    rgba(58, 58, 158, 0.8),
+                    rgba(136, 136, 206, 0.7)),
+                url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .header {
+            color: white;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 1px rgba(0,0,0, 0.4);
+        }
+        .header > p {
+            font-style: italic;
+            font-weight: 200;
+            font-size: 1.125rem;
+        }
+
+        .form {
+            background-color: #1b1b32;
+            border-radius: 5px;
+            margin: auto;
+            width: 650px;
+            padding: 2.5rem;
+            border-radius: 0.25;
+            opacity: 0.8;
+        }
+
+        label {
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        .item:nth-child(4)>select {
+            width: 100%;
+            padding: 5px;
+            color: gray;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            color: gray;
+            margin-bottom: 8px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            padding: 5px;
+
+        }
+
+        option:hover {
+            padding: 5px;
+            width: 100%;
+        }
+
+        .item {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 100px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            background-color: #37af65;
+            color: white;
+            padding: 5px;
+            font-size: 1rem;
+            border-radius: 0.25;
+            border: none;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="background"></div>
     <div class="header">
         <h2>freeCodeCamp Survey Form</h2>
         <p>thank you for taking the time to help us improve the platform</p>
@@ -16,8 +120,8 @@
             <input type="text" placeholder="Enter your name">
         </div>
         <div class="item">
-            <label>Age <span>(optional)</span></label>
-            <input type="text">
+            <label>Email <span>(optional)</span></label>
+            <input type="text" placeholder="Enter your email">
         </div>
         <div class="item">
             <label>Age</label>
@@ -25,44 +129,53 @@
         </div>
         <div class="item">
             <label>Which option best describes you current role?</label>
-           <option>
-               <select></select>
-           </option>
+            <select>
+                <option>select current role</option>
+                <option>student</option>
+                <option>Full time job</option>
+                <option>Full time learner</option>
+                <option>Prefer not to say</option>
+                <option>other</option>
+            </select>
         </div>
         <div class="item">
             <label>Would you recommend freeCodeCamp to a friend?</label>
-            <input type="radio"> Definitely
-            <input type="radio"> Maybe 
-            <input type="radio"> Not sure
+            <input type="radio"> Definitely <br />
+            <input type="radio"> Maybe <br />
+            <input type="radio"> Not sure <br />
         </div>
         <div class="item">
             <label>What is your favorite feature of freeCodeCamp</label>
-           <option>
-               <select></select>
-           </option>
+            <select>
+                <option>select an option</option>
+                <option>Challenges</option>
+                <option>Project</option>
+                <option>Community</option>
+                <option>Open source</option>
+            </select>
         </div>
         <div class="item">
-            <label></label>
-            <input type="checkbox"> Front-end Projects
-            <input type="checkbox"> Back-end Projects
-            <input type="checkbox"> Data Visualization
-            <input type="checkbox"> Challenges
-            <input type="checkbox"> Open Source Community
-            <input type="checkbox"> Gitter help rooms
-            <input type="checkbox"> Videos
-            <input type="checkbox"> City Meetups
-            <input type="checkbox"> Wiki
-            <input type="checkbox"> Additional Courses
+            <input type="checkbox"> Front-end Projects <br />
+            <input type="checkbox"> Back-end Projects <br />
+            <input type="checkbox"> Data Visualization <br />
+            <input type="checkbox"> Challenges <br />
+            <input type="checkbox"> Open Source Community <br />
+            <input type="checkbox"> Gitter help rooms <br />
+            <input type="checkbox"> Videos <br />
+            <input type="checkbox"> City Meetup <br />
+            <input type="checkbox"> Wiki <br />
+            <input type="checkbox" class="last_checkbox"> Additional Courses <br />
         </div>
-        
+
         <div class="item">
             <label>Any comments or suggestions?</label>
             <textarea></textarea>
         </div>
         <div class="item">
-            
+
             <input type="button" value="submit">
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>
