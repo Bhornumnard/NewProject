@@ -1,1 +1,1 @@
-this is new file for test git flow
+this is new file (edit content for conflict) test git flow
