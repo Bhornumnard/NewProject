@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 pypdyydpdfh78t86ttf8rt
+=======
+crsls-l-[-098rt
+>>>>>>> New
 
-.pi.pip.ddpy
+.pi.pydddddpy
