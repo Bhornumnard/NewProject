@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridEx {
+            border: 1px black solid;
+            margin-bottom: 10px;
+             width: 80%;
+             height: 80%;
+            margin: auto;
+        }
+
+        .center,
+        .stretch,
+        .end,
+        .between,
+        .around,
+        .even {
+            display: grid;
+            grid-template:  repeat(2, 300px) / repeat(3, 300px) ;
+            height: 600px;
+            width: 100%;
+            border: darkgreen 1px dotted;
+            margin-bottom: 10px;
+        }
+
+        .row,
+        .column {
+            display: flex;
+            flex-wrap: wrap;
+            height: 800px;
+            width: 80%;
+            border: darkgreen 1px dotted;
+            margin-bottom: 10px;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .row *,
+        .column * {
+            width: 200px;
+            height: 200px;
+            background-color: wheat;
+            outline: dotted darkblue 1px;
+        }
+
+        .center *,
+        .stretch *,
+        .end *,
+        .between *,
+        .around *,
+        .even *{
+            width: 60%;
+            height: 60%;
+            background-color: wheat;
+            border: darkblue 1px solid;
+            outline: dotted greenyellow 1px;
+        }
+
+        .gridEx .center {
+            align-items: center;
+            /* แนวตั้ง */
+            justify-items: center;
+            /* แนวนอน */
+            justify-content: center;
+
+        }
+
+        .gridEx .stretch {
+            align-items: stretch;
+            /* แนวตั้ง */
+            justify-items: stretch;
+            /* แนวนอน */
+            justify-content: stretch;
+        }
+
+        .gridEx .end {
+            align-items: end;
+            /* แนวตั้ง */
+            justify-items: end;
+            /* แนวนอน */
+            justify-content: end;
+
+        }
+
+      
+        .gridEx .even{
+            justify-content: space-evenly;
+            align-content: space-evenly;
+            place-items: center;
+        }
+        .gridEx .around {
+            justify-content: space-around;
+            align-content: space-around;
+            place-items: center;
+        }
+
+        .gridEx .between {
+            justify-content: space-between;
+            align-content: space-between;
+            place-items: center;
+        }
+
+
+        .gridEx1 .center {
+            align-content: center;
+            /* แนวตั้ง */
+            justify-content: center;
+            /* แนวนอน */
+
+        }
+
+        .gridEx1 .stretch {
+            align-content: stretch;
+            /* แนวตั้ง */
+            justify-content: stretch;
+            /* แนวนอน */
+        }
+
+        .gridEx1 .end {
+            align-content: end;
+            /* แนวตั้ง */
+            justify-content: end;
+            /* แนวนอน */
+        }
+
+        .FlexCenter .row,
+        .FlexCenter .column {
+            justify-content: center;
+            /* justify-items: center; */
+            align-items: center;
+        }
+
+        .FlexAround .row,
+        .FlexAround .column {
+            justify-content: space-around;
+            align-items: space-around;
+        }
+
+        .FlexBetween .row,
+        .FlexBetween .column {
+            justify-content: space-between;
+            align-items: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="gridEx">
+            <div class="center">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="stretch">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="end">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="around">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="between">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="even">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="FlexCenter">
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="column">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+            <div class="FlexAround">
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="column">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="FlexBetween">
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="column">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
