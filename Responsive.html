@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    .item {
+        background-color: burlywood;
+        border: grey 1px solid;
+    }
+
+    .container {
+        margin: 20px auto;
+        background-color: wheat;
+    }
+
+    .row {
+        background-color: yellowgreen;
+        height: 200px;
+        border: 1px black solid;
+    }
+
+    .change {
+        margin: auto;
+    }
+
+    .change div {
+        background-color: coral;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .change:hover .hide {
+        display: block;
+    }
+
+    .change:hover .show {
+        display: none;
+    }
+</style>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div class="change">
+            <div class="show"> ABCD </div>
+            <div class="hide">show this text when hover</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col item col-sm-5 col-lg-3">1</div>
+            <div class="col col-sm-5 col-lg-3 bg-primary">2</div>
+            <div class="w-100"></div>
+            <div class="col bg-light">3</div>
+            <div class="col item offset-2">4</div>
+        </div>
+
+
+
+    </div>
+    <div class="container">
+        <div class="row row-cols-4 justify-content-between">
+            <div class="col item">1</div>
+            <div class="col item">2</div>
+            <div class="col item align-self-center">3</div>
+        </div>
+        <div class="row row-cols-4 justify-content-around">
+            <div class="col item">4</div>
+            <div class="col item">5</div>
+            <div class="col item">6</div>
+        </div>
+        <div class="row row-cols-5 justify-content-center">
+            <div class="col item">7</div>
+            <div class="col item">8</div>
+            <div class="col item">9</div>
+            <div class="col item ">10</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-4 align-items-center">
+            <div class="col item">1</div>
+            <div class="col item">2</div>
+            <div class="col item">3</div>
+            <div class="col item">4</div>
+        </div>
+        <div class="row row-cols-4 align-items-end">
+            <div class="col item">1</div>
+            <div class="col item">2</div>
+            <div class="col item">3</div>
+            <div class="col item">4</div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-6">
+                <div class="col-12 col-md-6  item">1</div>
+                <div class="col-12 col-md-6  item">2</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+                <div class="col item">item</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

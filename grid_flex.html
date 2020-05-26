@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" type="text/css">
     <style>
         .gridEx {
             border: 1px black solid;
@@ -32,7 +33,7 @@
         .column {
             display: flex;
             flex-wrap: wrap;
-            height: 800px;
+            height: 1100px;
             width: 80%;
             border: darkgreen 1px dotted;
             margin-bottom: 10px;
@@ -152,10 +153,19 @@
             justify-content: space-between;
             align-items: space-between;
         }
+        .FlexEven .row, .FlexBetween .column{
+            justify-content: space-evenly;
+            align-items: space-evenly;
+        }
+        .first{
+            font-size: 40px;
+            color: blue;
+        }
     </style>
 </head>
 
 <body>
+    <i class="fab fa-facebook-square first"></i>
     <div class="grid_container">
         <div class="gridEx">
             <div class="center">
@@ -264,7 +274,25 @@
                     <div></div>
                 </div>
             </div>
+            <div class="FlexEven">
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="column">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
 
+            </div>
         </div>
     </div>
 </body>
